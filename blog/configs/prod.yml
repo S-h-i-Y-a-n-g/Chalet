@@ -1,0 +1,18 @@
+mysql:
+  host: 101.42.118.66:3306
+  db: blog
+  user: root
+  password: Pjh100367017
+
+redis:
+  addr: '101.42.118.66:6379'
+  password: 'Pjh100367017'
+
+# 465 smtp.163.com 网易
+qq_mail:
+  authorization_code: qpqtchcyqnvhbegd
+  user_name: 844310197@qq.com
+  port: 587
+  host: 'smtp.qq.com'
+  is-ssl: true
+  nickname: '你大爷还是你大爷'
