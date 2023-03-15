@@ -1,11 +1,11 @@
 package server
 
 import (
-	"chalet/blog/internal/controller/article"
-	"chalet/blog/internal/controller/file"
-	"chalet/blog/internal/controller/test"
-	"chalet/blog/internal/controller/user"
-	"chalet/blog/internal/middleware"
+	"chalet/blog/internals/controller/article"
+	"chalet/blog/internals/controller/file"
+	"chalet/blog/internals/controller/test"
+	"chalet/blog/internals/controller/user"
+	"chalet/blog/internals/middleware"
 	"github.com/gin-gonic/gin"
 )
 

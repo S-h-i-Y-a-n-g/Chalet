@@ -16,3 +16,8 @@ qq_mail:
   host: 'smtp.qq.com'
   is-ssl: true
   nickname: '你大爷还是你大爷'
+jwt:
+  buffer-time: 86400
+  expires-time: 604800
+  issuer: qmPlus
+  signing-key: 96a02062-9e58-4579-90b1-b9a8545ac398

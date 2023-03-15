@@ -1,7 +1,7 @@
 package test
 
 import (
-	"chalet/blog/internal/service/test"
+	"chalet/blog/internals/service/test"
 	"chalet/pkg/handlerutils"
 	"github.com/gin-gonic/gin"
 )

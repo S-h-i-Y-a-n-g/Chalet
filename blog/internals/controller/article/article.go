@@ -1,7 +1,7 @@
 package article
 
 import (
-	"chalet/blog/internal/service/article"
+	"chalet/blog/internals/service/article"
 	"chalet/pkg/handlerutils"
 	"chalet/pkg/request"
 	"github.com/gin-gonic/gin"

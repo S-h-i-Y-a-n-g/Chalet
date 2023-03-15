@@ -1,7 +1,7 @@
 package test
 
 import (
-	"chalet/blog/internal/config"
+	"chalet/blog/internals/config"
 	"chalet/pkg/mail"
 	"context"
 )

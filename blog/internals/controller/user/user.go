@@ -1,7 +1,7 @@
 package user
 
 import (
-	"chalet/blog/internal/service/user"
+	"chalet/blog/internals/service/user"
 	"chalet/pkg/handlerutils"
 	"chalet/pkg/request"
 	"github.com/gin-gonic/gin"
