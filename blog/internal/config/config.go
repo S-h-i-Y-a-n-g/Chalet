@@ -21,6 +21,14 @@ type appConfig struct {
 	QQMail entity.QQMail `yaml:"qq_mail"`
 }
 
+type JWT struct {
+	SigningKey  string `mapstructure:"signing-key" json:"signing-key" yaml:"signing-key"`    // jwt签名
+	ExpiresTime int64  `mapstructure:"expires-time" json:"expires-time" yaml:"expires-time"` // 过期时间
+	BufferTime  int64  `mapstructure:"buffer-time" json:"buffer-time" yaml:"buffer-time"`    // 缓冲时间
+	Issuer      string `mapstructure:"issuer" json:"issuer" yaml:"issuer"`                   // 签发者
+}
+
+
 var AppConfig appConfig
 
 func Init() {
@@ -43,8 +51,11 @@ func InitWithEnv(env string) {
 }
 
 func getConfigFileByEnv(env string) string {
+	a:="please provide env info to run DLinter. e.g. ./DLinter -env dev"
+	b := make([]interface{}, 1, 1)
+	b[0] = a
 	if env == "none" {
-		panic("please provide env info to run DLinter. e.g. ./DLinter -env dev")
+		panic(b[0])
 	}
 	logFileName := env + ".yml"
 	log.Printf("current env is: %s, log file nam is: %s", env, logFileName)

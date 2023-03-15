@@ -38,7 +38,9 @@ func initRouter(v1 *gin.RouterGroup) {
 
 func initUserRouter(rulesRoute *gin.RouterGroup) {
 	{
+		//注册接口
 		rulesRoute.POST("/register", user.Registration)
+		//登录接口
 		rulesRoute.POST("/login", user.Login)
 		//评论文章
 	}
@@ -57,12 +59,14 @@ func initArticleRouter(rulesRoute *gin.RouterGroup) {
 
 func FileRouter(rulesRoute *gin.RouterGroup) {
 	{
+		// 上传图片
 		rulesRoute.POST("/image", file.UploadFile)
 	}
 }
 
 func TestRouter(rulesRoute *gin.RouterGroup) {
 	{
+		// 发送邮件
 		rulesRoute.GET("/mail", test.SendMail)
 	}
 }
